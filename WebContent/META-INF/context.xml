@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<Resource name="jdbc/kic" 
+	          auth="Container"
+			  type="javax.sql.DataSource" 
+			  driverClassName="org.mariadb.jdbc.Driver"
+		  	  url="jdbc:mariadb://localhost/kic?autoReconnect=true"
+			  username="kic12" 
+			  password="kic12" 
+			  maxActive="7"  
+			  maxIdle="4"
+			  maxWait="3000" 
+			  		testOnBorrow="true" 
+			  		testOnReturn="false"
+				validationQuery="SELECT 1" />
+</Context> 
